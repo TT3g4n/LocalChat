@@ -45,11 +45,11 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/html/index.html");
 });
 
 app.get("/chat", (req, res) => {
-  res.sendFile(__dirname + "/chat.html");
+  res.sendFile(__dirname + "/html/chat.html");
 });
 
 app.get("/messages", (req, res) => {
