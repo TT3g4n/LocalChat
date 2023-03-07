@@ -13,7 +13,7 @@ try {
   console.log(`Error reading messages from file: ${err}`);
 }
 
-app.use(express.static(__dirname + "/"));
+app.use(express.static(process.cwd() + "/"));
 
 io.on("connection", (socket) => {
   console.log("A user connected");
@@ -45,11 +45,11 @@ io.on("connection", (socket) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/html/index.html");
+  res.sendFile(process.cwd() + "/html/index.html");
 });
 
 app.get("/chat", (req, res) => {
-  res.sendFile(__dirname + "/html/chat.html");
+  res.sendFile(process.cwd() + "/html/chat.html");
 });
 
 app.get("/messages", (req, res) => {
