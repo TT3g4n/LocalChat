@@ -3,5 +3,36 @@
     "express": "^4.18.2",
     "nodemon": "^2.0.21",
     "socket.io": "^4.6.1"
-  }
+  },
+  "name": "localchat",
+  "description": "A Local Chatting website that doesn't need internet!",
+  "version": "1.0.0",
+  "main": "./src/app.js",
+  "bin": "./src/app.js",
+  "assets": [
+    "**",
+    "**"
+  ],
+  "targets": [
+    "node16",
+    "x86"
+  ],
+  "outputPath": "dist",
+  "devDependencies": {},
+  "scripts": {
+    "run": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js",
+    "scripts": "build/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iT3g4n/LocalChat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iT3g4n/LocalChat/issues"
+  },
+  "homepage": "https://github.com/iT3g4n/LocalChat#readme"
 }
