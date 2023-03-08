@@ -19,6 +19,9 @@ Once you are offline and would like to chat with someone, it's a bit more compli
 4. In that terminal, run `ipconfig`. Find the IP address under the adapter that has something to do with hotspot or Wi-Fi, and remember that. That will be the URL that you input on your clients devices.
 5. Finally, run `node ./src/app.js`.
 
+# Updated Offline Steps
+ 1. Instead of opening the terminal and running `node ./src/app.js`, just run the .exe file.
+
 That's it! Now you can navigate to that IP address that you got in step 4, and begin chatting.
 
 # Usecases
